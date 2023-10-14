@@ -7,4 +7,4 @@ This is a fullstack application to check if a website is running or not. It is b
 - [x] Create the server side application using Golang
 - [x] Create the client side application using React
 - [x] Make the UI look clean and simple
-- [ ] Deploy the application to Heroku
+- [ ] Deploy the application

@@ -1,14 +1,16 @@
 package main
 
 import (
-	"fmt"
+	// "fmt"
 	"net/http"
+	"os"
+	"log"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/cors"
 )
 
-var link string = "https://www.google.com"
+var link string = ""
 var status string = ""
 
 func main() {
@@ -44,23 +46,28 @@ func main() {
 
 		return c.JSON(fiber.Map{
 			"link":   link,
-			"status": status,
 		})
 
 	})
 
-	checkLink(link)
+	// checkLink(link)
 
-	app.Listen(":5000")
+	port := os.Getenv("PORT")
+
+	if port == "" {
+		port = "5000"
+	}
+
+	log.Fatal(app.Listen("0.0.0.0:" + port))
 }
 
 func checkLink(link string) {
 	_, err := http.Get(link)
 	if err != nil {
-		fmt.Println(link, "might be down!")
+		// fmt.Println(link, "might be down!")
 		status = "down"
 		return
 	}
-	fmt.Println(link, "is up!")
+	// fmt.Println(link, "is up!")
 	status = "up"
 }
