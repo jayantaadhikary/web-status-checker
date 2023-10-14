@@ -10,5 +10,5 @@ This is a fullstack application to check if a website is running or not. It is b
 - [ ] Deploy the application
 
 Screenshot of the application:
-![BeforeCheck]("screenshots/beforecheck.png")
-![AfterCheck]("screenshots/aftercheck.png")
+[![BeforeCheck]("screenshots/beforecheck.png")]
+[![AfterCheck]("screenshots/aftercheck.png")]
