@@ -8,3 +8,7 @@ This is a fullstack application to check if a website is running or not. It is b
 - [x] Create the client side application using React
 - [x] Make the UI look clean and simple
 - [ ] Deploy the application
+
+Screenshot of the application:
+![BeforeCheck]("./screenshots/beforecheck.png")
+![AfterCheck]("./screenshots/aftercheck.png")
