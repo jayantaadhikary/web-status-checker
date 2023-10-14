@@ -3,4 +3,4 @@ This is a fullstack application to check if a website is running or not. It is b
 
 ## Todo List
 - [x] Create a server side application using Golang
-- [] Create a client side application using React
+- [ ] Create a client side application using React
