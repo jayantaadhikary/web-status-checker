@@ -7,7 +7,7 @@ This is a fullstack application to check if a website is running or not. It is b
 - [x] Create the server side application using Golang
 - [x] Create the client side application using React
 - [x] Make the UI look clean and simple
-- [x] Deploy the server side application to Render (The free plan scales down the web server instance after 15min of inactivity)
+- [x] Deploy the server side application to Render (Sadly, the free plan of Render scales down the web server instance after 15min of inactivity 😔 )
 - [ ] Update the GET and POST requests to use the render URL instead of the localhost URL
 - [ ] Deploy the client side application to Netlify
 
