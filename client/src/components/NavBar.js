@@ -9,7 +9,7 @@ function NavBar() {
         <Navbar.Brand href="/">Website Status Checker</Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
-          <Navbar.Text>
+          <Navbar.Text style={{paddingRight: 15}}>
             Twitter: <a href="https://twitter.com/jayadky">jayadky</a>
           </Navbar.Text>
           {" /  / "}
