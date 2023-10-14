@@ -5,6 +5,7 @@ import (
 	"net/http"
 
 	"github.com/gofiber/fiber/v2"
+	"github.com/gofiber/fiber/v2/middleware/cors"
 )
 
 var link string = "https://www.google.com"
@@ -12,6 +13,8 @@ var status string = ""
 
 func main() {
 	app := fiber.New()
+
+	app.Use(cors.New())
 
 	app.Get("/", func(c *fiber.Ctx) error {
 		return c.SendString("Hello, World 👋!")
@@ -40,7 +43,7 @@ func main() {
 		checkLink(link)
 
 		return c.JSON(fiber.Map{
-			"link": link,
+			"link":   link,
 			"status": status,
 		})
 
