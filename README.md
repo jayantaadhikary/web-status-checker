@@ -11,6 +11,7 @@ This is a fullstack application to check if a website is running or not. It is b
 - [ ] Update the GET and POST requests to use the Heroku URL instead of the localhost URL
 - [ ] Deploy the client side application to Netlify
 
+
 Screenshot of the application:
 ![BeforeCheck](screenshots/beforecheck.png)
 ![AfterCheck](screenshots/statuscheck.png)
