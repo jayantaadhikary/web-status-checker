@@ -25,7 +25,7 @@ function InputForm() {
   }
 
   function getData() {
-    axios.get("http://localhost:5000/status").then((res) => {
+    axios.get(`${process.env.REACT_APP_SERVER_URL}/status`).then((res) => {
       setData(res.data);
     });
   }
@@ -45,7 +45,7 @@ function InputForm() {
     }
 
     axios
-      .post("http://localhost:5000/check", link, {
+      .post(`${process.env.REACT_APP_SERVER_URL}/check`, link, {
         headers: {
           "Content-Type": "application/json",
         },
