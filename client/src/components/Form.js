@@ -61,32 +61,31 @@ function InputForm() {
 
   return (
     <>
-      <div className="d-flex justify-content-center">
-        <InputGroup className="mb-3 w-25">
-          <InputGroup.Text id="basic-addon3">https://</InputGroup.Text>
-          <Form.Control
-            id="basic-url"
-            aria-describedby="basic-addon3"
-            placeholder="Website URL"
-            onChange={formInputChangeHandler}
-            value={url}
-          />
-        </InputGroup>
-        <div>
+      <div className="d-flex justify-content-center mb-3">
+        <div className="d-flex align-items-center">
+          <InputGroup className="mb-3 w-75 w-md-50">
+            <InputGroup.Text id="basic-addon3">https://</InputGroup.Text>
+            <Form.Control
+              id="basic-url"
+              aria-describedby="basic-addon3"
+              placeholder="Website URL"
+              onChange={formInputChangeHandler}
+              value={url}
+            />
+          </InputGroup>
           <Button
-            className="ms-2 mb-3 mt-1 text-center"
+            className="ms-2 mt-2 mb-4 text-center text-sm"
             variant="secondary"
             type="submit"
             size="sm"
             onClick={submitButtonHandler}
           >
-            {" "}
             Submit!
           </Button>
         </div>
       </div>
       {data.status && data.link ? (
-        <div className=" d-flex flex-column align-items-center">
+        <div className="d-flex flex-column align-items-center">
           <p>
             <strong>Link:</strong>{" "}
             <a href={data.link} target="_blank" rel="noreferrer">
